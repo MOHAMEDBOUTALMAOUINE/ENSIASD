@@ -1,0 +1,192 @@
+/* Importation des polices depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Réinitialisation des marges par défaut, du rembourrage, et utilisation de Montserrat comme police principale */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Application de box-sizing à tous les éléments */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Assurer que les images ne dépassent pas la largeur de leur conteneur parent */
+img {
+  max-width: 100%;
+}
+
+/* Réinitialisation des marges pour les balises de titre */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* Réinitialisation des marges et du rembourrage pour les listes */
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* Suppression des styles de liste par défaut */
+li {
+  list-style: none;
+}
+
+/* Suppression des soulignements des liens */
+a {
+  text-decoration: none;
+}
+
+/* Réinitialisation des marges pour les paragraphes */
+p {
+  margin: 0;
+}
+
+/* Suppression des soulignements des liens au survol */
+a:hover {
+  text-decoration: none;
+}
+
+/* Assurer une largeur maximale pour les conteneurs de contenu */
+.container {
+  max-width: 1170px;
+}
+
+/* Rembourrage du conteneur réactif pour les écrans plus petits */
+@media screen and (max-width: 575px) {
+  .container {
+    padding: 0 15px;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* Styles pour la barre de navigation fixe */
+.my-nav {
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  background: #437d7d;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+/* Styles pour les éléments de navigation */
+.my-nav .nav-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Alignement réactif des éléments de navigation */
+@media (max-width: 768px) {
+  .my-nav .nav-items {
+    align-items: center;
+  }
+}
+
+/* Styles pour le logo */
+.my-nav .nav-items .logo {
+  width: 30%;
+  position: relative !important;
+  max-width: 30%;
+  flex: 1 1 30%;
+  padding: 10px 15px;
+}
+
+/* Ajustements réactifs pour le logo */
+@media screen and (max-width: 767.98px) {
+  .my-nav .nav-items .logo {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+
+/* Styles pour les éléments de menu */
+.my-nav .nav-items .menu-items {
+  width: 70%;
+  max-width: 70%;
+  flex: 1 1 70%;
+  position: relative;
+}
+
+/* Ajustements réactifs pour les éléments de menu */
+@media screen and (max-width: 767.98px) {
+  .my-nav .nav-items .menu-items {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+
+/* Styles pour le menu de navigation */
+.my-nav .nav-items .menu-items .menu {
+  display: block;
+  float: right;
+  padding: 10px 15px;
+}
+
+/* Ajustements réactifs pour le menu de navigation */
+@media screen and (max-width: 767.98px) {
+  .my-nav .nav-items .menu-items .menu {
+    float: left;
+    display: none;
+    background: rgba(0, 33, 71, 0.9);
+    width: 100%;
+    position: relative;
+  }
+}
+
+/* Styles pour les éléments du menu de navigation */
+.my-nav .nav-items .menu-items .menu ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Ajustements réactifs pour les éléments du menu de navigation */
+@media screen and (max-width: 767.98px) {
+  .my-nav .nav-items .menu-items .menu ul li {
+    display: block;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  /* Styles supplémentaires pour les écrans de taille moyenne */
+  .my-nav .nav-items .menu-items .menu ul li {
+    padding: 10px 2px;
+  }
+}
+
+/* Styles pour les liens du menu de navigation */
+.my-nav .nav-items .menu-items .menu ul li a {
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+/* Effet au survol pour les liens du menu de navigation */
+.my-nav .nav-items .menu-items .menu ul li a:hover {
+  color: #fdc800;
+}
+
+/* Ajustements réactifs pour les liens du menu de navigation */
+@media screen and (max-width: 767.98px) {
+  .my-nav .nav-items .menu-items .menu ul li a {
+    padding: 10px 0;
+  }
+}
+
+/* Styles supplémentaires supprimés pour des raisons de concision */
